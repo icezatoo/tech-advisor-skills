@@ -27,7 +27,12 @@ tech-advisor-skills/
 │   │                                # scoring-rule · popularity-criteria
 │   │                                # risk-checklist · tech-catalog
 │   └── examples/                    # 4 worked Tech Advisor Reports
-├── .claude/ .cursor/ .gemini/       # provider entry points (stubs)
+├── .claude/                         # Claude Code entry points
+│   └── commands/
+│       ├── tech-advisor.md          # combined router command
+│       └── tech-advisor/            # registered sub-commands
+│           └── analyze · compare · stack · explain
+├── .cursor/ .gemini/                # provider entry points (stubs)
 ├── .opencode/ .kiro/ commands/      # provider entry points (stubs)
 ├── .github/copilot-instructions.md  # GitHub Copilot stub
 ├── AGENTS.md CLAUDE.md GEMINI.md     # agent / project guidance
@@ -41,17 +46,19 @@ tech-advisor-skills/
 
 | Command | Purpose |
 |---|---|
-| `/tech-advisor analyze` | Analyze a requirement, plan, ticket, or pasted text → full report |
-| `/tech-advisor compare` | Compare 2+ tools head-to-head |
-| `/tech-advisor stack` | Recommend a full stack for a project |
-| `/tech-advisor explain` | Explain a tool, pattern, or decision in depth |
+| `/tech-advisor:analyze` | Analyze a requirement, plan, ticket, or pasted text → full report |
+| `/tech-advisor:compare` | Compare 2+ tools head-to-head |
+| `/tech-advisor:stack` | Recommend a full stack for a project |
+| `/tech-advisor:explain` | Explain a tool, pattern, or decision in depth |
+
+In Claude Code each sub-command is a **registered slash command** (declared in `plugin.json`), so `analyze`, `compare`, `stack`, and `explain` appear individually in the `/` menu. `/tech-advisor` on its own still works as a combined router.
 
 ## Usage
 
 ```text
-/tech-advisor analyze OAPI-12345          # connected (Jira)
-/tech-advisor analyze <pasted ticket>     # direct
-/tech-advisor analyze <implementation plan>
+/tech-advisor:analyze OAPI-12345          # connected (Jira)
+/tech-advisor:analyze <pasted ticket>     # direct
+/tech-advisor:analyze <implementation plan>
 ```
 
 All three produce the same Tech Advisor Report.

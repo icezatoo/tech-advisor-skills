@@ -11,11 +11,11 @@ Copy `skills/tech-advisor/` into your project (or `~/.claude/skills/`), and the 
 
 ## Use
 ```text
-/tech-advisor analyze OAPI-12345
-/tech-advisor analyze <pasted requirement or plan>
-/tech-advisor compare <toolA> vs <toolB>
-/tech-advisor stack <project description>
-/tech-advisor explain <tool | pattern>
+/tech-advisor:analyze OAPI-12345
+/tech-advisor:analyze <pasted requirement or plan>
+/tech-advisor:compare <toolA> vs <toolB>
+/tech-advisor:stack <project description>
+/tech-advisor:explain <tool | pattern>
 ```
 
 ## Connectors / MCP

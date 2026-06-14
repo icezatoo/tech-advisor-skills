@@ -5,7 +5,7 @@ Primary Tech Advisor command. Analyzes any **direct** or **connected** source an
 ## Usage
 
 ```text
-/tech-advisor analyze <ticket-key | url | pasted content>
+/tech-advisor:analyze <ticket-key | url | pasted content>
 ```
 
 ## Input modes
@@ -14,13 +14,13 @@ This command must support **connected input OR direct input** — both produce t
 
 ### Connected — Jira key
 ```text
-/tech-advisor analyze OAPI-12345
+/tech-advisor:analyze OAPI-12345
 ```
 Detect the key → check for a Jira connector/MCP → fetch summary, description, acceptance criteria, components, labels, comments, linked issues → analyze.
 
 ### Connected — URL
 ```text
-/tech-advisor analyze
+/tech-advisor:analyze
 https://company.atlassian.net/browse/OAPI-12345
 ```
 Detect the URL → if a connector is available, fetch; otherwise request the user paste the content.
@@ -30,7 +30,7 @@ If no connector/MCP matches the detected source, respond with the templated mess
 
 ### Direct — pasted requirement / plan / ticket
 ```text
-/tech-advisor analyze
+/tech-advisor:analyze
 
 Need to fix HTTP timeout when calling external API.
 Need retry and logging.

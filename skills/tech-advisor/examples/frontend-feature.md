@@ -2,7 +2,7 @@
 
 **Input**
 ```text
-/tech-advisor analyze
+/tech-advisor:analyze
 
 Add a data table with server-side pagination, sorting, and filtering
 to our React app. Needs to stay fast with 10k+ rows.

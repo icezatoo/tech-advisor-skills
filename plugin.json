@@ -17,6 +17,10 @@
     "skills/tech-advisor/SKILL.md"
   ],
   "commands": [
-    ".claude/commands/tech-advisor.md"
+    ".claude/commands/tech-advisor.md",
+    ".claude/commands/tech-advisor/analyze.md",
+    ".claude/commands/tech-advisor/compare.md",
+    ".claude/commands/tech-advisor/stack.md",
+    ".claude/commands/tech-advisor/explain.md"
   ]
 }

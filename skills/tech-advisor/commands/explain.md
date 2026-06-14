@@ -5,12 +5,12 @@ Explain a single tool, pattern, or technology decision in depth — like a tech 
 ## Usage
 
 ```text
-/tech-advisor explain <tool | pattern | decision> [for <context>]
+/tech-advisor:explain <tool | pattern | decision> [for <context>]
 ```
 
 Example:
 ```text
-/tech-advisor explain circuit breaker pattern for external API calls
+/tech-advisor:explain circuit breaker pattern for external API calls
 ```
 
 ## Output

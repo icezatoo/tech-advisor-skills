@@ -15,10 +15,10 @@ commands/tech-advisor.md   →  points to skills/tech-advisor/SKILL.md
 Keep `skills/tech-advisor/` in your workspace so the stub can reference the canonical logic and references. Invoke with:
 
 ```text
-/tech-advisor analyze <ticket | url | pasted content>
-/tech-advisor compare <toolA> vs <toolB>
-/tech-advisor stack <project description>
-/tech-advisor explain <tool | pattern>
+/tech-advisor:analyze <ticket | url | pasted content>
+/tech-advisor:compare <toolA> vs <toolB>
+/tech-advisor:stack <project description>
+/tech-advisor:explain <tool | pattern>
 ```
 
 ## Option B — Manual (always works)
