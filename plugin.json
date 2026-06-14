@@ -1,5 +1,5 @@
 {
-  "name": "tech-advisor",
+  "name": "tech-advisor-skills",
   "version": "1.0.0",
   "description": "Connector-aware AI Tech Lead skill. Analyzes requirements, plans, Jira tickets, and bug reports to recommend modern technologies, libraries, and engineering practices with scores, popularity analysis, risks, and alternatives.",
   "author": "tech-advisor",

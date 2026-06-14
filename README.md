@@ -19,7 +19,7 @@ It doesn't just say *"Use Resty."* It says:
 ## Repository layout
 
 ```text
-tech-advisor/
+tech-advisor-skills/
 ├── skills/tech-advisor/
 │   ├── SKILL.md                # canonical skill (source of truth)
 │   ├── commands/               # analyze · compare · stack · explain
@@ -57,7 +57,7 @@ All three produce the same Tech Advisor Report.
 
 See [`docs/`](docs/) for per-tool setup. Quick paths:
 
-- **Claude Code:** `claude --plugin-dir /path/to/tech-advisor` (clone the repo first).
+- **Claude Code:** `claude --plugin-dir /path/to/tech-advisor-skills` (clone the repo first).
 - **Cursor:** the rule in `.cursor/rules/tech-advisor.md` points to `skills/tech-advisor/SKILL.md`.
 - **Gemini CLI:** `gemini skills install ./skills/`.
 - **Any agent:** paste `skills/tech-advisor/SKILL.md` as system instructions.

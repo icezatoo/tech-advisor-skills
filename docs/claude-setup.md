@@ -2,8 +2,8 @@
 
 ## Option A — Local plugin directory
 ```bash
-git clone <repo-url> tech-advisor
-claude --plugin-dir /path/to/tech-advisor
+git clone <repo-url> tech-advisor-skills
+claude --plugin-dir /path/to/tech-advisor-skills
 ```
 
 ## Option B — Manual
