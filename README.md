@@ -20,18 +20,21 @@ It doesn't just say *"Use Resty."* It says:
 
 ```text
 tech-advisor-skills/
-├── skills/tech-advisor/
-│   ├── SKILL.md                # canonical skill (source of truth)
-│   ├── commands/               # analyze · compare · stack · explain
-│   ├── references/             # connector-detection · multi-agent-support
-│   │                           # scoring-rule · popularity-criteria
-│   │                           # risk-checklist · tech-catalog
-│   └── examples/               # 4 worked Tech Advisor Reports
-├── plugin.json                 # Claude Code plugin manifest
-├── .claude/ .gemini/ .cursor/  # provider entry points (stubs)
-├── commands/ .opencode/ .kiro/ # provider entry points (stubs)
-├── .github/copilot-instructions.md
-└── docs/                       # per-tool setup + compatibility matrix
+├── skills/tech-advisor/             # the skill (single source of truth)
+│   ├── SKILL.md                     # canonical skill definition
+│   ├── commands/                    # analyze · compare · stack · explain
+│   ├── references/                  # connector-detection · multi-agent-support
+│   │                                # scoring-rule · popularity-criteria
+│   │                                # risk-checklist · tech-catalog
+│   └── examples/                    # 4 worked Tech Advisor Reports
+├── .claude/ .cursor/ .gemini/       # provider entry points (stubs)
+├── .opencode/ .kiro/ commands/      # provider entry points (stubs)
+├── .github/copilot-instructions.md  # GitHub Copilot stub
+├── AGENTS.md CLAUDE.md GEMINI.md     # agent / project guidance
+├── docs/                            # per-tool setup + compatibility matrix
+├── plugin.json                      # Claude Code plugin manifest
+├── README.md
+└── LICENSE                          # MIT
 ```
 
 ## Commands
@@ -65,3 +68,7 @@ See [`docs/`](docs/) for per-tool setup. Quick paths:
 ## Design
 
 The portability contract lives in [`skills/tech-advisor/references/multi-agent-support.md`](skills/tech-advisor/references/multi-agent-support.md), modeled on [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills). Provider files are thin stubs; all logic lives in `SKILL.md` and `references/`.
+
+## License
+
+[MIT](LICENSE).
