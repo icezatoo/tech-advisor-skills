@@ -2,7 +2,7 @@
 
 **Input**
 ```text
-/tech-advisor analyze
+/tech-advisor:analyze
 
 Integrate a third-party shipping rates API into our Node/TS backend.
 Need typed responses, caching, and graceful degradation if the API is down.

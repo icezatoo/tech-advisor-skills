@@ -2,7 +2,7 @@
 
 **Input**
 ```text
-/tech-advisor analyze
+/tech-advisor:analyze
 
 Need to fix HTTP timeout when calling external API.
 Need retry and logging. Service is written in Go.

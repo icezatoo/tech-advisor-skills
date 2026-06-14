@@ -91,7 +91,7 @@ If multiple connected sources resolve the same input, prefer in this order:
 ## Jira Input Modes
 
 ### Mode 1 — Jira connector available
-Input: `/tech-advisor analyze OAPI-12345`
+Input: `/tech-advisor:analyze OAPI-12345`
 
 ```text
 Detect Jira ticket key → check Jira connector → fetch:
@@ -101,7 +101,7 @@ Detect Jira ticket key → check Jira connector → fetch:
 ```
 
 ### Mode 2 — Jira URL
-Input: `/tech-advisor analyze` + `https://company.atlassian.net/browse/OAPI-12345`
+Input: `/tech-advisor:analyze` + `https://company.atlassian.net/browse/OAPI-12345`
 
 ```text
 Detect Jira URL.
@@ -110,7 +110,7 @@ Otherwise             → request user to paste content.
 ```
 
 ### Mode 3 — Jira connector NOT available
-Input: `/tech-advisor analyze OAPI-12345`
+Input: `/tech-advisor:analyze OAPI-12345`
 
 Respond exactly with:
 
@@ -158,7 +158,7 @@ Instead, always: **fall back to copy/paste mode.**
 Every analysis command must accept **connected input OR direct input**, and all forms must produce the same Tech Advisor Report:
 
 ```text
-/tech-advisor analyze OAPI-12345             (connected)
-/tech-advisor analyze <jira content>         (direct)
-/tech-advisor analyze <implementation plan>  (direct)
+/tech-advisor:analyze OAPI-12345             (connected)
+/tech-advisor:analyze <jira content>         (direct)
+/tech-advisor:analyze <implementation plan>  (direct)
 ```

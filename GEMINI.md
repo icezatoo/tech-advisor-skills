@@ -21,10 +21,10 @@ Or paste `skills/tech-advisor/SKILL.md` into your Gemini project rules / system 
 ## Usage
 
 ```text
-/tech-advisor analyze <ticket | url | pasted content>
-/tech-advisor compare <toolA> vs <toolB>
-/tech-advisor stack <project description>
-/tech-advisor explain <tool | pattern>
+/tech-advisor:analyze <ticket | url | pasted content>
+/tech-advisor:compare <toolA> vs <toolB>
+/tech-advisor:stack <project description>
+/tech-advisor:explain <tool | pattern>
 ```
 
 ## Connector note

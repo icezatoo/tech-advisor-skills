@@ -4,7 +4,7 @@ This example shows the **no-connector fallback** path, then a normal analysis.
 
 **Input**
 ```text
-/tech-advisor analyze OAPI-12345
+/tech-advisor:analyze OAPI-12345
 ```
 
 **Step 1 — connector not available**, so Tech Advisor responds:

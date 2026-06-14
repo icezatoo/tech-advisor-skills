@@ -5,12 +5,12 @@ Compare two or more tools head-to-head for a specific task.
 ## Usage
 
 ```text
-/tech-advisor compare <toolA> vs <toolB> [vs <toolC>] [for <context>]
+/tech-advisor:compare <toolA> vs <toolB> [vs <toolC>] [for <context>]
 ```
 
 Example:
 ```text
-/tech-advisor compare Resty vs net/http vs Heimdall for external API calls with retry
+/tech-advisor:compare Resty vs net/http vs Heimdall for external API calls with retry
 ```
 
 ## Steps

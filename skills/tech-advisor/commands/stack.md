@@ -5,14 +5,14 @@ Recommend a full technology stack for a project or feature.
 ## Usage
 
 ```text
-/tech-advisor stack <project description | connected source>
+/tech-advisor:stack <project description | connected source>
 ```
 
 Accepts **connected input OR direct input** (same rules as `analyze`; see `references/connector-detection.md`).
 
 Example:
 ```text
-/tech-advisor stack
+/tech-advisor:stack
 
 Building a B2B dashboard: needs auth, charts, REST API, Postgres, deployed on AWS.
 ```

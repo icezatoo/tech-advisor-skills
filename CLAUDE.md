@@ -14,7 +14,7 @@ skills/tech-advisor/SKILL.md
 
 - Slash command: `.claude/commands/tech-advisor.md` (invokes the skill).
 - Plugin manifest: `plugin.json` registers `skills/tech-advisor/SKILL.md`.
-- Invoke with `/tech-advisor analyze | compare | stack | explain`.
+- Invoke with `/tech-advisor:analyze | tech-advisor:compare | tech-advisor:stack | tech-advisor:explain`.
 
 ## Working rules (when editing this repo)
 

@@ -10,10 +10,10 @@ The Gemini command stub is `.gemini/commands/tech-advisor.md` and points to the 
 
 ## Use
 ```text
-/tech-advisor analyze <ticket | url | pasted content>
-/tech-advisor compare <toolA> vs <toolB>
-/tech-advisor stack <project description>
-/tech-advisor explain <tool | pattern>
+/tech-advisor:analyze <ticket | url | pasted content>
+/tech-advisor:compare <toolA> vs <toolB>
+/tech-advisor:stack <project description>
+/tech-advisor:explain <tool | pattern>
 ```
 
 ## Connectors / MCP
