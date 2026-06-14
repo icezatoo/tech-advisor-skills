@@ -57,7 +57,7 @@ All three produce the same Tech Advisor Report.
 
 See [`docs/`](docs/) for per-tool setup. Quick paths:
 
-- **Claude Code:** `/plugin marketplace add <owner>/tech-advisor`, or `claude --plugin-dir /path/to/tech-advisor`.
+- **Claude Code:** `claude --plugin-dir /path/to/tech-advisor` (clone the repo first).
 - **Cursor:** the rule in `.cursor/rules/tech-advisor.md` points to `skills/tech-advisor/SKILL.md`.
 - **Gemini CLI:** `gemini skills install ./skills/`.
 - **Any agent:** paste `skills/tech-advisor/SKILL.md` as system instructions.

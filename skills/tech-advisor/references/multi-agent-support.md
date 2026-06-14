@@ -54,14 +54,11 @@ description: <what it does>. Use when ...
 ## Install Methods
 
 ```text
-# Claude Code — marketplace
-/plugin marketplace add <owner>/tech-advisor
-
 # Claude Code — local plugin dir
 git clone <repo> && claude --plugin-dir /path/to/tech-advisor
 
 # Gemini CLI
-gemini skills install ./tech-advisor/skills/
+gemini skills install ./skills/
 
 # Manual (any agent)
 Paste skills/tech-advisor/SKILL.md as system instructions or project rules.
